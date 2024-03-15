@@ -63,9 +63,9 @@ class Customer{
 
     void myMethod()throws Exception{
         try{
-        System.out.println("Entering into the main method's try block");
-        System.out.println(Thread.getDefaultUncaughtExceptionHandler().toString());
-        System.out.println("About to exit from the try block");
+            System.out.println("Entering into the main method's try block");
+            System.out.println(Thread.getDefaultUncaughtExceptionHandler().toString());
+            System.out.println("About to exit from the try block");
         }catch (RuntimeException exp){
             try {
                 Thread.setDefaultUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler() {
